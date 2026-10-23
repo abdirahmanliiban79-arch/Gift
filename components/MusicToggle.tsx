@@ -18,7 +18,7 @@ export default function MusicToggle() {
     const audio = audioRef.current;
     if (!audio || !src) return;
 
-    const events = ["pointerdown", "keydown"] as const;
+    const events = ["pointerdown", "touchend", "click", "keydown"] as const;
     const stopListening = () => events.forEach((e) => window.removeEventListener(e, onGesture));
     const attempt = () => audio.play().then(stopListening, () => {});
     function onGesture() {

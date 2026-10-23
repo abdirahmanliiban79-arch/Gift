@@ -38,7 +38,7 @@ export const surpriseContent = {
 
   /** File lives in public/audio. Set src to "" to hide the music button entirely. */
   music: {
-    src: "/audio/sow%20sow.mp3",
+    src: "/audio/sow-sow.m4a",
   },
 
   /** Exactly seven photographs, shown two per page. Replace the files, or edit the paths/alt text. */
